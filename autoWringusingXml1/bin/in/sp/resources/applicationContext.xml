@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+     <bean class = "in.sp.beans.Address" id = "address">
+     	<constructor-arg value = "123"/>
+     	<constructor-arg value = "Kholahyu"/>
+     	<constructor-arg value = "413323"/>
+     </bean>
+    
+    <bean class = "in.sp.beans.Student" id = "stdId" autowire = "constructor" >
+     	<constructor-arg value  = "Atharav" index = "0"/>
+     	<constructor-arg value = "121" index = "1"/>
+     	
+     </bean>
+
+</beans>
